@@ -175,7 +175,7 @@ function initCanvas(){
     var fire_btn  = document.getElementById('fire_btn'); 
 
    document.addEventListener('keydown', function(event) {
-        if(event.keyCode == 37) // left arrow
+        if(event.keyCode === 37) // left arrow
         {
          launcher.direccion = 'left';  
             if(launcher.x < cW*.2-130){
@@ -186,7 +186,7 @@ function initCanvas(){
     });
 
     document.addEventListener('keyup', function(event) {
-        if(event.keyCode == 37)
+        if(event.keyCode === 37)
         {
          launcher.x+=0;
          launcher.direccion = '';
@@ -194,7 +194,7 @@ function initCanvas(){
     }); 
 
     document.addEventListener('keydown', function(event) {
-        if(event.keyCode == 39) // right arrow
+        if(event.keyCode === 39) // right arrow
         {
          launcher.direccion = 'right';
          if(launcher.x > cW-110){
@@ -206,7 +206,7 @@ function initCanvas(){
     });
 
     document.addEventListener('keyup', function(event) {
-        if(event.keyCode == 39) // right arrow
+        if(event.keyCode === 39) // right arrow
         {
          launcher.x-=0;   
          launcher.direccion = '';
@@ -214,7 +214,7 @@ function initCanvas(){
     }); 
 
     document.addEventListener('keydown', function(event){
-         if(event.keyCode == 38) // up arrow
+         if(event.keyCode === 38) // up arrow
          {
            launcher.direccion = 'upArrow';  
            if(launcher.y < cH*.2-80){
@@ -225,7 +225,7 @@ function initCanvas(){
     });
 
     document.addEventListener('keyup', function(event){
-         if(event.keyCode == 38) // up arrow
+         if(event.keyCode === 38) // up arrow
          {
            launcher.y -= 0;
            launcher.direccion = '';
@@ -233,7 +233,7 @@ function initCanvas(){
     });
 
     document.addEventListener('keydown', function(event){
-         if(event.keyCode == 40) // down arrow
+         if(event.keyCode === 40) // down arrow
          {
            launcher.direccion = 'downArrow';  
           if(launcher.y > cH - 110){
@@ -243,7 +243,7 @@ function initCanvas(){
          }
     });
     document.addEventListener('keyup', function(event){
-         if(event.keyCode == 40) // down arrow
+         if(event.keyCode === 40) // down arrow
          {
            launcher.y += 0;
            launcher.direccion = '';
@@ -251,7 +251,7 @@ function initCanvas(){
     });
 
     document.addEventListener('keydown', function(event){
-         if(event.keyCode == 80) // restart game
+         if(event.keyCode === 80) // restart game
          {
           location.reload();
          }
