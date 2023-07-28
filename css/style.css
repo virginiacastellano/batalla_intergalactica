@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  background-image: url("../images/universo-editado1.png");
+  background-size: cover; /* Ajusta la imagen de fondo para que cubra todo el cuerpo */
+  font-family: Arial, sans-serif; /* Fuente moderna y legible */
+}
+
+.container {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px; /* Añade un espacio de 20px alrededor del contenido */
+}
+
+.barra {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 18px;
+  height: 40px; /* Aumenta la altura de la barra para mayor visibilidad */
+  width: 100%; /* Cambia el ancho a 100% para que ocupe todo el ancho del contenedor */
+  display: flex; /* Usa Flexbox para centrar el contenido de la barra */
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+#my_canvas {
+  background: #000000;
+  border: 2px solid #bcbcbc; /* Cambia el color del borde para que contraste con el fondo */
+}
+
+
+.boton {
+  color: rgb(109, 104, 244);
+  font-size: 24px;
+  background-color: #000000;
+  cursor: pointer;
+  border-radius: 16px;
+  border: 2px solid blue;
+  display: inline-block;
+  padding: 12px 24px;
+  text-align: center;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.boton:hover {
+  background-color: #1a1a1a;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
